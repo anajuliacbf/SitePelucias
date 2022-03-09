@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "poppins";
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+/* header */
+
+header {
+  position: relative;
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: palevioletred;
+}
+div.logo {
+  margin-left: 4vw;
+}
+h1.logo {
+  font-size: clamp(1em, 1.3vw, 1.8em);
+  color: black;
+  font-weight: 300;
+}
+nav.header {
+  margin-right: 4vw;
+  margin-left: 10px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+li#header-active {
+  background-color: #fff;
+  color: black;
+}
+li {
+  color: black;
+  font-weight: 400;
+  padding: 0 10px;
+  font-size: clamp(0.7em, 1vw, 1em);
+  border-radius: 8px;
+}
+li:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+}
+/* main */
+
+main {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.btnprodutos {
+  top: 76vh;
+  display: flex;
+  justify-content: center;
+}
+/* produtos */
+
+section.produtos {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.container {
+  max-width: 60vw;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.card-produto {
+  background-color: #fff;
+  margin: 15px 9px;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+.card-produto:hover {
+  cursor: pointer;
+}
+.img-card {
+  width: 200px;
+}
+.img-card > img {
+  width: 80%;
+}
+.pd-nome {
+  font-size: clamp(0.9em, 1.5vw, 1.5em);
+  font-weight: 200;
+}
+.preco {
+  color: #9e8568;
+  font-size: clamp(1em, 1.8vw, 1.6em);
+  font-weight: bold;
+}
